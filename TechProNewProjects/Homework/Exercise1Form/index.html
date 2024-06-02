@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Subscription form</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <a class="navigation" href="index.html">Home</a>
+            <a class="navigation" href="AboutUs.html">About Us</a>
+            <a class="navigation" href="products.html">Products</a>
+            <a class="navigation" href="contactUs.html">Contact Us</a>
+        </nav>
+    </header>
+    <main>
+        <div class="form">
+            <form>
+                <h1>Subscribe here &#8628;</h1>
+                <fieldset>
+                    <legend>Personal Data</legend>
+                    <label for="fname">First Name</label>
+                    <input id="fname" name="firstName" type="text"><br>
+
+                    <label for="lname">Last name</label>
+                    <input id="lname" name="lastName" type="text"><br>
+
+                    <label for="email">Email</label>
+                    <input id="email" name="email" type="email"><br>
+
+                    <label for="phone">Phone number</label>
+                    <input id="phone" name="phoneNumber" pattern="[0-9]{4}-[0-9]{3}-[0-9]{3}" placeholder="69xx-xxx-xxx" type="tel"><br>
+
+                    <label for="dob">Date of birth</label>
+                    <input id="dob" name="dateOfBirht" type="date"><br>
+
+                    <div class="address">
+                    <label for="address">Address</label>
+                    <textarea id="address" rows="5"></textarea><br>
+                    </div>
+                </fieldset>
+                <fieldset>
+                    <legend>Preferences</legend>
+                    <label for="package">Subscription Package</label>
+                    <select id="package" name="package">
+                        <option value="basic">Basic</option>
+                        <option value="plus">Plus</option>
+                        <option value="premium">Premium</option>
+                    </select><br>
+
+                    <label>Duration</label>
+                        <div>
+                            <input id="monthly" name="monthly" type="radio" value="monthly">
+                            <label for="monthly">1 month</label><br>
+                            <input id="threeMonths" name="threeMonths" type="radio" value="threeMonths">
+                            <label for="threeMonths">3 months</label><br>
+                            <input id="sixMonths" name="sixMonths" type="radio" value="sixMonths">
+                            <label for="sixMonths">6 months</label><br>
+                            <input id="yearly" name="yearly" type="radio" value="yearly">
+                            <label for="yearly">1 year</label><br>
+                        </div>
+                </fieldset>
+                <input id="tac" name="termsAndConditions" type="checkbox">
+                <label for="tac">I read and I agree with the <a class="terms" href="termsAndConditions.html">Terms and Conditions</a></label><br>
+                <button class="button" onclick="alert('Subscription Submitted')" type="submit">Submit</button>
+            </form>
+        </div>
+    </main>
+    <footer>
+       <a class="terms" href="learnMore.html">Learn more</a>
+    </footer>
+</body>
+</html>
